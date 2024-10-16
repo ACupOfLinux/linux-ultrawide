@@ -5,6 +5,23 @@
 
 This is a custom compiled linux kernel for ultrawide monitors to fix the flicking in 5120x1440@240.00, or any other ultrawide issues with custom patches! The patch slowly clocks down the pixel rate.
 
+
+# INSTALLATION:
+Binary (Arch): 
+```console
+sudo pacman -U linux-6.11.3.arch1-1-x86_64.pkg.tar.zst && sudo pacman -U linux-headers-6.11.3.arch1-1-x86_64.pkg.tar.zst
+```
+
+Binary (Distro Agnostic):
+```console
+sudo cp -v BzImage /boot/vmlinuz-linux && sudo cp System.Map /boot && sudo mkinitcpio -p linux -g /boot/initramfs-linux.img
+```
+
+Building The Kernel:
+```console
+sudo make -j{YOUR NUMBER OF CPU THREADS +1} && sudo make -j{YOUR NUMBER OF CPU THREADS +1} modules_install
+```
+
 Linux kernel
 ============
 
@@ -24,5 +41,5 @@ Please read the Documentation/process/changes.rst file, as it contains the
 requirements for building and running the kernel, and information about
 the problems which may result by upgrading your kernel.
 
-# INSTALLATION:
-Binary (Arch): sudo pacman -U linux-6.11.3.arch1-1-x86_64.pkg.tar.zst && sudo pacman -U linux-headers-6.11.3.arch1-1-x86_64.pkg.tar.zst 
+# CREDIT:
+Gitlab User: @robertswiecki
