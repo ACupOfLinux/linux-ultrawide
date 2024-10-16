@@ -12,7 +12,7 @@ Binary (Arch):
 sudo pacman -U linux-6.11.3.arch1-1-x86_64.pkg.tar.zst && sudo pacman -U linux-headers-6.11.3.arch1-1-x86_64.pkg.tar.zst
 ```
 
-Binary (Distro Agnostic):
+Binary (Distro Agnostic) COMING SOON!:
 ```console
 sudo cp -v BzImage /boot/vmlinuz-linux && sudo cp System.Map /boot && sudo mkinitcpio -p linux -g /boot/initramfs-linux.img
 ```
