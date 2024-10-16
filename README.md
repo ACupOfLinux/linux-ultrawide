@@ -23,3 +23,6 @@ several of them using the reStructuredText markup notation.
 Please read the Documentation/process/changes.rst file, as it contains the
 requirements for building and running the kernel, and information about
 the problems which may result by upgrading your kernel.
+
+# INSTALLATION:
+Binary (Arch): sudo pacman -U linux-6.11.3.arch1-1-x86_64.pkg.tar.zst && sudo pacman -U linux-headers-6.11.3.arch1-1-x86_64.pkg.tar.zst 
