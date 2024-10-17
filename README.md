@@ -3,7 +3,7 @@
 
 # WHAT IS IT?
 
-This is a custom compiled linux kernel for ultrawide monitors to fix the flicking in 5120x1440@240.00, or any other ultrawide issues with custom patches! The patch slowly clocks down the pixel rate.
+This is a custom compiled linux kernel for ultrawide monitors to fix the flicking in 5120x1440@240.00, or any other ultrawide issues with custom patches! The patch clocks the pixel rate down from what i'm aware.
 
 
 # INSTALLATION:
@@ -17,7 +17,7 @@ Binary (Distro Agnostic) COMING SOON!:
 sudo cp -v BzImage /boot/vmlinuz-linux && sudo cp System.Map /boot && sudo mkinitcpio -p linux -g /boot/initramfs-linux.img
 ```
 
-Building The Kernel:
+Building The Kernel (No need to configure unless REALLY needed):
 ```console
 sudo make -j{YOUR NUMBER OF CPU THREADS +1} && sudo make -j{YOUR NUMBER OF CPU THREADS +1} modules_install
 ```
